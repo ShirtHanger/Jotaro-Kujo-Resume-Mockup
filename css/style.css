@@ -130,7 +130,7 @@ strong {
 
 /* Psuedo Class + Descendant Selectors */
 
-.gallery-item:hover, button:hover, select:hover {
+.gallery-item:hover, button:hover, select:hover, li:hover {
     background-color: #bddd08;
     color: #0e2266;
 }
