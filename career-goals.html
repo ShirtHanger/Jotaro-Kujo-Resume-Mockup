@@ -18,21 +18,139 @@
     <header>
         <nav>
             <ul>
-                <li><a href="career-goals.html">Career Goals</a></li>
-                <li><a href="cover-letter.html">Cover Letter</a></li>
-                <li><a href="https://kujo-sakana-jp.surge.sh">My Personal Blog!</a></li>
+                <li><span><a href="resume.html">Resume</a></span></li>
+                <li><span><a href="cover-letter.html">Cover Letter</a></span></li>
+                <li><span><a href="https://kujo-sakana-jp.surge.sh">My Personal Blog!</a></span></li>
             </ul>
         </nav>
     </header>
 
-    <main></main>
+    <main>
+        <hr>
+
+        <section id="career-goals">
+            <h3>Career Goals</h3>
+                <article>
+                    <p>As an aspiring oceanographer and marine biologist, my career goals are centered around advancing our understanding of marine ecosystems and contributing to their conservation and sustainable management.</p>
+                    <p>In the short term, I aim to secure a position with a reputable research institution or environmental organization where I can apply my skills in field research, data analysis, and scientific communication. I am particularly interested in projects that focus on coral reef restoration, marine biodiversity assessments, and the impacts of climate change on ocean health.</p> 
+                    <p>In the long term, I aspire to lead my own research initiatives that address critical issues facing our oceans today. I envision collaborating with international teams to conduct large-scale studies that inform policy decisions and promote global marine conservation efforts. Additionally, I am passionate about mentoring the next generation of marine scientists and advocating for increased public awareness about the importance of ocean conservation.</p>
+                    <p>Ultimately, my goal is to make meaningful contributions to the field of marine biology that not only enhance scientific knowledge but also drive positive change for the health and sustainability of our planet's oceans.</p>
+                </article>
+        </section>
+
+        <hr>
+
+        <!-- Media -->
+
+        <div id="media">
+
+            <section id="photo-audio">
+                <h4>My Photographs</h4>
+
+                <article class="gallery">
+                
+                    <div class="gallery-item media-gallery-item">
+                        <caption>Common Bottlenose Dolphin</caption>
+                        <img src="images/bottlenose_dolphin.jpg" alt="Common Bottlenose Dolphin" width="300" height="200">
+                        
+                        <audio src="./Media/dolphin-clicks.mp3" controls></audio>
+                        <cite>https://www.marinemammalcenter.org/animal-care/learn-about-marine-mammals/cetaceans/common-bottlenose-dolphin</cite>
+                    
+                    </div>
+
+
+                    <div class="gallery-item media-gallery-item">
+                        <caption>Hawaiian Monk Seal</caption>
+                        <img src="images/Hawaiian-monk-seal.jpg" alt="Hawaiian Monk Seal" width="300" height="200">
+                        
+                        <audio src="./Media/hawaiian-monk-seal.mp3" controls></audio>
+                        <cite>https://www.marinemammalcenter.org/animal-care/learn-about-marine-mammals/pinnipeds/hawaiian-monk-seal</cite>
+                    </div>
+
+                </article>
+
+            </section>
+
+            <section id="videos">
+                <h4>My Footage</h4>
+
+                <article class="gallery">
+
+
+                    <div class="gallery-item media-gallery-item">
+                        <caption>The Largest Mass Migration on the Planet - Nature on PBS</caption>
+                        <video src="Media/dolphin-super-pod.mp4" alt="" controls width="300"></video>
+                        <cite>https://www.youtube.com/watch?v=IY7g1JCfRgk</cite>
+                    </div>
+    
+                    <div class="gallery-item media-gallery-item">
+                        <caption>A Showy Dolphin Super-Pod | Destination WILD - Nat Geo Animals</caption>
+                        <video src="Media/Sardine-Migration.mp4" alt="" controls width="300"></video>
+                        <cite>https://www.youtube.com/watch?v=TWJUutiGPdc</cite>
+                    </div>
+
+                </article>
+
+            </section>
+
+        </div>
+
+        <hr>
+    </main>
 
     <footer>
-        <h6>Email Me</h6>
-            <ul>
-                <li>Email: kujo.jotaro@gmri.org</li>
-                <li>PO Box: 12345, Orlando, FL 32801</li>
-            </ul>
+        <section id="contact-form ">
+            <h3>Book an appointment with me!</h3>
+            <form action="https://wp.zybooks.com/form-viewer.php" method="post" enctype="multipart/form-data">
+                <div id="form-data">
+                    <label for="first-name">First Name</label>
+                    <input type="text" name="first-name" id="first-name">
+                    <label for="last-name">Last Name</label>
+                    <input type="text" name="last-name" id="last-name">
+                    <label for="company-name">Company</label>
+                    <input type="text" name="company-name" id="company-name">
+                    <label for="user-email">Email Address</label>
+                    <input type="email" name="user-email" id="user-email">
+                    <label for="user-phone">Phone Number</label>
+                    <input type="tel" name="user-phone" id="user-phone">
+                    <label for="message">Write a Message</label>
+                    <textarea name="message" id="message"></textarea>
+                    <fieldset>
+                        <legend>Best Contact Time</legend>
+                        <input type="radio" id="am" name="ideal-time" value="am">
+                        <label for="am">A.M.</label>
+                        <input type="radio" id="pm" name="ideal-time" value="pm">
+                        <label for="pm">P.M.</label>
+                        <input type="radio" id="anytime" name="ideal-time" value="anytime">
+                        <label for="anytime">Anytime</label>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Purpose of appointment</legend>
+                        <input type="radio" id="marine-business" name="appointment-purpose" value="marine-business">
+                        <label for="marine-business">Business call</label>
+                        <input type="radio" id="joestar-business" name="appointment-purpose" value="joestar-business">
+                        <label for="joestar-business">Joestar family inquiry</label>
+                        <input type="radio" id="intern" name="appointment-purpose" value="intern">
+                        <label for="intern">Seeking internship</label>
+                    </fieldset>
+
+                    
+                    <label for="contact-method">Preferred Contact Method</label>
+                    <div id="form-buttons">
+                        <select name="contact-method" id="contact-method">
+                            <option value="phone">Phone</option>
+                            <option value="email">Email</option>
+                            <option value="text">Text</option>
+                        </select>
+
+                        
+                            <button type="submit"><strong>Book</strong></button>
+                            <button type="reset"><strong>Reset</strong></button>
+                    </div>
+
+                </div>
+            </form>
+        </section>
     </footer>
     
 </body>
