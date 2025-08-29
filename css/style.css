@@ -18,6 +18,14 @@ body {
     text-align: center;
 }
 
+ul {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
 section {
     display: flex;
     flex-direction: column;
@@ -26,6 +34,10 @@ section {
 
 ul {
     list-style: none;
+}
+
+a {
+    color: #e72222;
 }
 
 button, select {
@@ -69,6 +81,7 @@ strong {
     flex-wrap: wrap;
     justify-content: center;
     text-align: center;
+    font-size: smaller;
 }
 
 .gallery-item {
